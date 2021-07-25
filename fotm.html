@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+    h2{
+      color: white;
+      background: navy;
+      width: 100%;
+      height: 50px;
+      font-size: 40px;
+      text-align: center;
+      border-radius: 5px;
+    }
+input[type=text]{
+  width: 40%;                                                                                                                                       }
+.form{
+  background: lightblue;
+}
+input[type=submit]{
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+
+}
+input[type=submit]:hover{
+  background: orangered;
+  font-size: 16px;
+}
+input[type=reset]{
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+input[type=reset]:hover{
+  background: orangered;
+  font-size: 16px;
+}
+.text{
+  margin-left: 20px;
+}
+
+.container{
+  margin-left: 30px;
+}
+  
+  </style>
+</head>
+<body>
+  
+  <section class="form">
+
+  <h2>Admission Form</h2>
+<div class="container">
+  <div><form action="">
+   <label for="fullname"> Full Name:</label> 
+   <input type="text" name="fullname" id="fullname" required></div> 
+
+   <br>
+   <div>
+    <label for="schoolname"> School Name:</label> 
+    <input type="text" name="Schoolname" id="Schoolname" required></div> 
+
+    <br>
+   <div>
+     <label for="email"> Email:</label>
+     <input type="email" name="email" id="email" required>
+  </div> 
+
+  <br>
+  <div>
+    <label for="password"> Password:</label>
+    <input type="password" name="password" id="password"required >
+ </div> 
+
+ <br>
+  <div>
+    <label for="dob"> Date of Birth: </label>
+    <input type="date" name="date" id="date" required>
+ </div> 
+
+ <br>
+ <div>
+   <label for="photo"> Choose Your Photo: </label>
+   <input type="file" name="photo" id="photo"required >
+</div> 
+
+ <br>
+ <div>
+   <label for="gender"> Gender: </label>
+   <input type="radio" name="gender" id="gender" value="male"> Male
+   <input type="radio" name="gender" id="gender" value="female" > Female
+</div> 
+
+ <br>
+ <div>
+   <label for="religion">Religion : </label>
+   <input type="radio" name="religion" id="muslim" value="islam" > Islam
+   <input type="radio" name="religion" id="hindu" value="hindu"> Hindu
+</div>
+
+ <br>
+<div>
+  <label for="group"> Group : </label>
+<select name="group" id="" required>
+<option value=""></option>
+<option value="Science">Science</option>
+<option value="art's">Art's</option>
+<option value="comart's">comart's</option>
+</select>
+</div>
+
+<br>
+<div>
+  <label for="subjects"> Subjects : </label>
+<select name="subjects" id="" required>
+<option value=""></option>
+<option value="math/higher-math/baiology">Math/Higher-Math/Baiology</option>
+<option value="math/science">Math/science</option>
+</select>
+</div>
+
+<br>
+<div>
+  <input type="submit" value="Admit">
+  <input type="reset" value="Clear"></div>
+  </form></div>
+</section>               
+</body>
+</html>
